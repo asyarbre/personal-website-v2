@@ -1,5 +1,6 @@
 import { BlurFade } from '@/components/magicui/blur-fade';
 import BlurFadeText from '@/components/magicui/blur-fade-text';
+import Skill from '@/components/skills';
 import { Spotlight } from '@/components/spotlight';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { DATA } from '@/data/resume';
@@ -46,6 +47,14 @@ export default function Home() {
           <p className="prose max-w-full text-pretty text-muted-foreground dark:prose-invert">
             {DATA.summary}
           </p>
+        </BlurFade>
+      </section>
+      <section id="skills">
+        <BlurFade delay={BLUR_FADE_DELAY * 5}>
+          <h2 className="text-xl font-bold">Skills</h2>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 6}>
+          <Skill />
         </BlurFade>
       </section>
     </main>
