@@ -4,13 +4,14 @@ import { Icons } from '@/components/icons';
 
 export const DATA = {
   name: "Asya'ri",
+  initials: 'AS',
   url: 'https://asyari.web.id',
   location: 'Jakarta, Indonesia',
   locationLink: 'https://www.google.com/maps/place/jakarta',
   description:
     'A student who aspires to be a software engineer interested in full-stack development',
   summary:
-    'At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).',
+    'Passionate and skilled Full Stack Engineer with a strong foundation in a diverse set of technologies. Proficient in front-end development using ReactJS, NextJs. Back-end expertise includes ExpressJs, Laravel, Codeigniter, and database management with MySQL, PostgreSQL and MongoDB. Well-versed in responsive design frameworks such as Bootstrap and TailwindCSS. Additionally, possess Linux server administration skills and Google Cloud Platform.',
   avatarUrl: '/me.jpg',
   skills: [
     'React',
@@ -46,6 +47,12 @@ export const DATA = {
         url: 'https://www.linkedin.com/in/asyari1',
         icon: Icons.linkedin,
 
+        navbar: true,
+      },
+      Resume: {
+        name: 'Resume',
+        url: 'https://bit.ly/cv-asyari',
+        icon: Icons.file,
         navbar: true,
       },
       email: {
