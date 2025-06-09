@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 
 import './globals.css';
 
+import Navbar from '@/components/layouts/navbar';
 import { ThemeProvider } from '@/components/theme-provider';
 
 const geistSans = Geist({
@@ -28,6 +29,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
+          <Navbar />
         </ThemeProvider>
       </body>
     </html>
