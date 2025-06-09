@@ -1,6 +1,7 @@
 # Next.js + Tailwind CSS + TypeScript + Shadcn/UI Starter and Boilerplate
 
 ## Features
+
 This repository is packed with:
 
 - ⚡️ Next.js 15 with App Router
@@ -18,13 +19,16 @@ This repository is packed with:
 
 ## Getting Started
 
-### 1. Clone this template 
+### 1. Clone this template
+
 Using `create-next-app`
-   ```bash
-   pnpm create next-app -e https://github.com/asyarbre/nextjs-ts-starter nextjs-starter
-   ```
+
+```bash
+pnpm create next-app -e https://github.com/asyarbre/nextjs-ts-starter nextjs-starter
+```
 
 ### 2. Install dependencies
+
 It is encouraged to use **pnpm** so the husky hooks can work properly.
 
 ```bash
