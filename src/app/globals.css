@@ -160,6 +160,8 @@
   --shadow-2xl: var(--shadow-2xl);
 
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
 }
 
 @keyframes spotlight {
@@ -170,6 +172,23 @@
   100% {
     opacity: 1;
     transform: translate(-50%, -40%) scale(1);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
   }
 }
 
