@@ -1,6 +1,7 @@
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
+import FooterSection from '@/components/layouts/footer';
 import { BlurFade } from '@/components/magicui/blur-fade';
 import BlurFadeText from '@/components/magicui/blur-fade-text';
 import { ProjectCard } from '@/components/project-card';
@@ -92,6 +93,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <FooterSection />
     </main>
   );
 }
