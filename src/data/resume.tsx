@@ -290,6 +290,7 @@ export const DATA = {
       description:
         'web-based application for an inventory of goods at Balai Teknologi Survei Kelautan.',
       technologies: ['Codeigniter', 'Bootstrap', 'PHP', 'MySQL'],
+      links: [],
       image:
         'https://res.cloudinary.com/asyari/image/upload/v1725607625/inventaris_zyvxho.png',
     },
