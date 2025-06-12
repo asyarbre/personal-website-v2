@@ -38,9 +38,11 @@ export function ProjectCard({
 }: Props) {
   return (
     <Card
-      className={
-        'flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full p-0'
-      }
+      className={cn(
+        'group relative flex flex-col overflow-hidden border transition-all duration-300 ease-out h-full p-0 perspective-1000',
+        'hover:shadow-lg hover:scale-[1.02]',
+        className
+      )}
     >
       <Link
         href={href || '#'}
