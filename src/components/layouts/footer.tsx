@@ -26,23 +26,21 @@ const links = [
 
 export default function FooterSection() {
   return (
-    <footer className="border-t border-border bg-white py-2 dark:bg-transparent">
-      <div className="flex flex-wrap justify-between items-center py-4">
-        <span className="text-muted-foreground block text-center text-sm">
-          © {new Date().getFullYear()} Asya&apos;ri, All rights reserved
-        </span>
-        <div className="flex flex-wrap justify-center gap-6 text-sm">
-          {links.map((link) => (
-            <Link
-              href={link.href}
-              key={link.href}
-              target="_blank"
-              className="text-muted-foreground hover:text-primary"
-            >
-              {link.icon}
-            </Link>
-          ))}
-        </div>
+    <footer className="border-t border-border bg-background py-2 dark:bg-transparent mb-10 md:mb-0">
+      <span className="text-muted-foreground block text-center text-sm">
+        © {new Date().getFullYear()} Asya&apos;ri, All rights reserved
+      </span>
+      <div className="flex flex-wrap justify-center gap-6 text-sm mt-4">
+        {links.map((link) => (
+          <Link
+            href={link.href}
+            key={link.href}
+            target="_blank"
+            className="text-muted-foreground hover:text-primary"
+          >
+            {link.icon}
+          </Link>
+        ))}
       </div>
     </footer>
   );
