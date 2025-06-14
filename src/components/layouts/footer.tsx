@@ -26,7 +26,7 @@ const links = [
 
 export default function FooterSection() {
   return (
-    <footer className="border-t border-border bg-background py-2 dark:bg-transparent mb-10 md:mb-0">
+    <footer className="border-t border-border bg-background py-2 dark:bg-transparent mb-10 md:mb-0 mt-10">
       <span className="text-muted-foreground block text-center text-sm">
         © {new Date().getFullYear()} Asya&apos;ri, All rights reserved
       </span>
