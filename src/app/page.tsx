@@ -1,4 +1,5 @@
 import AboutSection from '@/components/about-section';
+import ExperiencesSection from '@/components/experiences-section';
 import HeroSection from '@/components/hero-section';
 import ProjectsSection from '@/components/projects-section';
 import SkillsSection from '@/components/skills-section';
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection blurFadeDelay={BLUR_FADE_DELAY} />
       <SkillsSection blurFadeDelay={BLUR_FADE_DELAY} />
       <ProjectsSection blurFadeDelay={BLUR_FADE_DELAY} />
+      <ExperiencesSection blurFadeDelay={BLUR_FADE_DELAY} />
     </main>
   );
 }
