@@ -9,7 +9,7 @@ import { DATA } from '@/data/resume';
 
 export default function ProjectsPage() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-4">
+    <main className="flex flex-col min-h-[100dvh] space-y-4 max-w-2xl mx-auto py-12 sm:py-24 px-6">
       <div className="flex items-center gap-2">
         <Button
           asChild

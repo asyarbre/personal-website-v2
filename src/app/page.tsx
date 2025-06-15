@@ -8,7 +8,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10">
+    <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-2xl mx-auto py-12 sm:py-24 px-6">
       <HeroSection blurFadeDelay={BLUR_FADE_DELAY} />
       <AboutSection blurFadeDelay={BLUR_FADE_DELAY} />
       <SkillsSection blurFadeDelay={BLUR_FADE_DELAY} />
