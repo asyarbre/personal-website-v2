@@ -14,6 +14,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
 };
 
-export default nextConfig;
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+});
+
+export default withMDX(nextConfig);
