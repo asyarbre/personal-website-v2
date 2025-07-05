@@ -3,8 +3,34 @@ import ExperiencesSection from '@/components/experiences-section';
 import HeroSection from '@/components/hero-section';
 import ProjectsSection from '@/components/projects-section';
 import SkillsSection from '@/components/skills-section';
+import { DATA } from '@/data/resume';
+
+import type { Metadata } from 'next';
 
 const BLUR_FADE_DELAY = 0.04;
+
+export const metadata: Metadata = {
+  title: DATA.name,
+  description: DATA.description,
+  openGraph: {
+    title: `${DATA.name} - Full Stack Developer`,
+    description: DATA.description,
+    url: DATA.url,
+    images: [
+      {
+        url: `${DATA.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: `${DATA.name} - Full Stack Developer`,
+      },
+    ],
+  },
+  twitter: {
+    title: `${DATA.name} - Full Stack Developer`,
+    description: DATA.description,
+    images: [`${DATA.url}/og-image.jpg`],
+  },
+};
 
 export default function Home() {
   return (

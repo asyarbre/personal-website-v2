@@ -28,7 +28,7 @@ export default function HeroSection({ blurFadeDelay }: HeroSectionProps) {
             <BlurFadeText
               className="max-w-[600px] md:text-xl"
               delay={blurFadeDelay}
-              text={DATA.description}
+              text="A student who aspires to be a software engineer interested in full-stack development"
             />
           </div>
           <BlurFade delay={blurFadeDelay}>

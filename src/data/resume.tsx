@@ -9,7 +9,7 @@ export const DATA = {
   location: 'Jakarta, Indonesia',
   locationLink: 'https://www.google.com/maps/place/jakarta',
   description:
-    'A student who aspires to be a software engineer interested in full-stack development',
+    "An online portfolio by Asya'ri. Showcase of my projects, skills, and some information about me.",
   summary:
     'Passionate and skilled Full Stack Engineer with a strong foundation in a diverse set of technologies. Proficient in front-end development using ReactJS, NextJs. Back-end expertise includes ExpressJs, Laravel, Codeigniter, and database management with MySQL, PostgreSQL and MongoDB. Well-versed in responsive design frameworks such as Bootstrap and TailwindCSS. Additionally, possess Linux server administration skills and Google Cloud Platform.',
   avatarUrl: '/me.jpg',
