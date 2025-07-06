@@ -84,36 +84,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script
-          type="application/ld+json"
-          suppressHydrationWarning
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Person',
-              name: DATA.name,
-              url: DATA.url,
-              description: DATA.description,
-              image: `${DATA.url}${DATA.avatarUrl}`,
-              sameAs: [
-                DATA.contact.social.GitHub.url,
-                DATA.contact.social.LinkedIn.url,
-              ],
-              jobTitle: 'Full Stack Developer',
-              worksFor: {
-                '@type': 'Organization',
-                name: 'Freelance',
-              },
-              address: {
-                '@type': 'PostalAddress',
-                addressLocality: 'Jakarta',
-                addressCountry: 'ID',
-              },
-            }),
-          }}
-        />
-      </head>
       <body
         className={`${geistSans.variable} min-h-screen bg-background font-sans antialiased`}
       >
