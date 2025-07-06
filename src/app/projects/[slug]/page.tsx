@@ -24,10 +24,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = await getProject(slug);
 
-  const { title, summary: description, image } = project.metadata;
-  const ogImage = image
-    ? `${DATA.url}${image}`
-    : `${DATA.url}/og?title=${title}`;
+  const { title, summary: description } = project.metadata;
 
   return {
     title,
@@ -37,17 +34,12 @@ export async function generateMetadata({
       description,
       type: 'article',
       url: `${DATA.url}/blog/${project.slug}`,
-      images: [
-        {
-          url: ogImage,
-        },
-      ],
+      images: '/opengraph-image.png',
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [ogImage],
     },
   };
 }

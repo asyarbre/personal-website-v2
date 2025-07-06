@@ -42,15 +42,15 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: `${DATA.name}`,
+    title: DATA.name,
     description: DATA.description,
     url: DATA.url,
-    siteName: `${DATA.name}`,
+    siteName: DATA.name,
     locale: 'id_ID',
     type: 'website',
     images: [
       {
-        url: '/open-graph.png',
+        url: '/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: `${DATA.name} - Full Stack Developer`,
@@ -67,13 +67,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  twitter: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    card: 'summary_large_image',
-    creator: '@asyarbre',
-    images: [`/open-graph.png`],
   },
   verification: {
     google: '',
