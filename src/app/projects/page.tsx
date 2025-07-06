@@ -2,7 +2,6 @@ import { ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
 import * as React from 'react';
 
-import { Breadcrumbs } from '@/components/breadcrumbs';
 import { BlurFade } from '@/components/magicui/blur-fade';
 import { ProjectCard } from '@/components/project-card';
 import { Button } from '@/components/ui/button';
@@ -39,8 +38,6 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-4 max-w-2xl mx-auto py-12 sm:py-24 px-6">
-      <Breadcrumbs items={[{ label: 'Projects' }]} />
-
       <div className="flex items-center gap-2">
         <Button
           asChild
