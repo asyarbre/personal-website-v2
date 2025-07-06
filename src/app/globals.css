@@ -232,6 +232,10 @@
   .prose h2 {
     @apply text-primary/90 text-2xl font-bold border-l-4 border-primary pl-4 mt-8;
   }
+
+  .prose h3 {
+    @apply text-primary/90 text-lg font-semibold mt-4;
+  }
 }
 
 h3 code {
