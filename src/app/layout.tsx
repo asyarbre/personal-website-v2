@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: `${DATA.url}/og-image.jpg`,
+        url: '/open-graph.png',
         width: 1200,
         height: 630,
         alt: `${DATA.name} - Full Stack Developer`,
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     description: DATA.description,
     card: 'summary_large_image',
     creator: '@asyarbre',
-    images: [`${DATA.url}/og-image.jpg`],
+    images: [`/open-graph.png`],
   },
   verification: {
     google: '',

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: `${DATA.url}/projects`,
     images: [
       {
-        url: `${DATA.url}/og-image.jpg`,
+        url: '/open-graph.png',
         width: 1200,
         height: 630,
         alt: `Projects | ${DATA.name}`,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: `Projects | ${DATA.name}`,
     description:
       'Explore my portfolio of web development projects including React, Next.js, and full-stack applications.',
-    images: [`${DATA.url}/og-image.jpg`],
+    images: [`/open-graph.png`],
   },
 };
 
