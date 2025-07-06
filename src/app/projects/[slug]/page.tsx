@@ -1,3 +1,4 @@
+import { LinkIcon } from 'lucide-react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { SiGithub } from 'react-icons/si';
@@ -101,6 +102,16 @@ export default async function Blog({
             >
               <SiGithub className="w-4 h-4" />
               <span>Repository</span>
+            </Link>
+          )}
+          {project.metadata.link && (
+            <Link
+              href={project.metadata.link}
+              target="_blank"
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary"
+            >
+              <LinkIcon className="w-4 h-4" />
+              <span>Live Demo</span>
             </Link>
           )}
         </div>
