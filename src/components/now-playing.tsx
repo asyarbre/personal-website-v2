@@ -38,8 +38,8 @@ export default function NowPlaying() {
   return (
     <>
       {data?.isPlaying && (
-        <div className="sticky top-0 w-full bg-[#1ED760] py-1 z-50">
-          <div className="container flex items-center justify-center gap-2 text-sm text-gray-900">
+        <div className="sticky top-0 w-full bg-[#1ED760] py-1 px-2 z-50">
+          <div className="container flex items-center justify-center gap-2 text-xs md:text-sm text-gray-900">
             <SiSpotify className="w-4 h-4" />
             <span>Now Playing:</span>
             <Link
@@ -54,7 +54,7 @@ export default function NowPlaying() {
                 height={16}
                 className="rounded"
               />
-              <span>
+              <span className="truncate max-w-[200px]">
                 {data.title} - {data.artist}
               </span>
             </Link>
