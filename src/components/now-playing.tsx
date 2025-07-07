@@ -54,7 +54,7 @@ export default function NowPlaying() {
                 height={16}
                 className="rounded"
               />
-              <span className="truncate max-w-[200px]">
+              <span className="truncate max-w-[200px] md:max-w-full">
                 {data.title} - {data.artist}
               </span>
             </Link>
