@@ -29,8 +29,8 @@ export default function NowPlaying() {
     };
 
     fetchNowPlaying();
-    // Polling every 3 minutes
-    const interval = setInterval(fetchNowPlaying, 180000);
+    // Polling every 5 minutes
+    const interval = setInterval(fetchNowPlaying, 5 * 60 * 1000);
 
     return () => clearInterval(interval);
   }, []);
