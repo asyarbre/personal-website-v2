@@ -149,6 +149,33 @@ export const DATA = {
   projects: [
     {
       isFeatured: true,
+      title: 'Sweet Check App',
+      href: 'projects/sweet-check-app',
+      description:
+        'Sweet Check is a web-based application designed to help users determine the sugar content of sweetened beverages and monitor their daily sugar intake interactively.',
+      technologies: [
+        'Next.js',
+        'TailwindCSS',
+        'TypeScript',
+        'Shadcn UI',
+        'Prisma',
+        'PostgreSQL',
+        'Google Cloud',
+        'Gemini AI',
+        'PWA',
+      ],
+      links: [
+        {
+          type: 'Website',
+          href: 'https://sweetcheck.asyari.web.id',
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image:
+        'https://res.cloudinary.com/asyari/image/upload/v1752108661/sweet-check_b7zve1.png',
+    },
+    {
+      isFeatured: true,
       title: 'Jajan Jalan REST API',
       href: 'projects/jajanjalan-api',
       description:
@@ -191,22 +218,6 @@ export const DATA = {
     },
     {
       isFeatured: true,
-      title: 'Audiobook Application',
-      href: 'projects/audiobook-app',
-      description: 'Web-based application for listening to audiobooks. ',
-      technologies: ['Laravel', 'TailwindCSS', 'Daisyui', 'MySQL'],
-      links: [
-        {
-          type: 'Source',
-          href: 'https://github.com/asyarbre/audiobook-web',
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image:
-        'https://res.cloudinary.com/asyari/image/upload/v1725458329/audiobook_jv5ebf.png',
-    },
-    {
-      isFeatured: true,
       title: 'NITA Merchant',
       href: 'projects/nita-merchant',
       description:
@@ -221,6 +232,22 @@ export const DATA = {
       ],
       image:
         'https://res.cloudinary.com/asyari/image/upload/v1725605271/nita-merchant-cover_sgbuzb.png',
+    },
+    {
+      isFeatured: false,
+      title: 'Audiobook Application',
+      href: 'projects/audiobook-app',
+      description: 'Web-based application for listening to audiobooks. ',
+      technologies: ['Laravel', 'TailwindCSS', 'Daisyui', 'MySQL'],
+      links: [
+        {
+          type: 'Source',
+          href: 'https://github.com/asyarbre/audiobook-web',
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        'https://res.cloudinary.com/asyari/image/upload/v1725458329/audiobook_jv5ebf.png',
     },
     {
       isFeatured: false,
