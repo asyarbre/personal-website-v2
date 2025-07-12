@@ -1,0 +1,56 @@
+---
+title: 'Sweet Check App'
+summary: 'Sweet Check is a web-based application designed to help users determine the sugar content of sweetened beverages and monitor their daily sugar intake interactively.'
+link: 'https://sweetcheck.asyari.web.id'
+---
+
+## Short Explanation
+
+Sweet Check is a web-based application designed to help users determine the sugar content of sweetened beverages and monitor their daily sugar intake interactively. The application allows users to scan nutrition labels using artificial intelligence (AI) technology, which then identifies the sugar content in beverages and classifies them based on sugar content indicators. Additionally, users can track their daily sugar intake, view statistics in graph form, and set personalized sugar intake limits. With its simple and responsive interface, Sweet Check serves as a digital solution to raise public awareness about the importance of controlling sugar intake for a healthier lifestyle.
+
+## Tech Stack Used
+
+- **Next.js**: A React framework for building server-side rendered applications.
+- **TailwindCSS**: A utility-first CSS framework for styling the application.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Shadcn/ui**: A set of React components built with TailwindCSS for building user interfaces.
+- **Prisma**: An ORM (Object-Relational Mapping) tool for TypeScript and Node.js, used for database access.
+- **PostgreSQL**: A powerful, open-source relational database system used for data storage.
+- **Google Cloud Platform**: A suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products.
+- **Gemini AI**: A generative AI model used for various AI tasks, such as natural language processing and understanding.
+- **PWA (Progressive Web App)**: A web application that uses modern web capabilities to deliver an app-like experience to users.
+
+## Features
+![Sweet Check App Features](https://res.cloudinary.com/asyari/image/upload/v1752307600/sweet-check-app_g6edjn.png)
+
+### 1. Scanning Nutrition Labels
+
+The beverage nutrition label scanning feature uses artificial intelligence (Gemini AI 2.0 Flash). Users simply take a photo of the nutrition label on the beverage packaging, and the system will automatically extract information such as sugar per serving, number of servings, total sugar, and sugar per 100 ml. The scan also includes a sugar content indicator (categories A–D), making it easier for users to understand whether the beverage is low or high in sugar.
+
+### 2. Sugar Consumption Diary
+
+The Diary feature records and displays a history of sugar consumption from beverages scanned by the user. Each time a user adds a beverage, data such as the product name, sugar content, volume, and date are recorded in the diary. Additionally, the app displays a daily progress bar showing how much sugar has been consumed compared to the set daily limit, helping users become more aware of their daily sugar consumption patterns.
+
+### 3. Daily Sugar Limit
+
+Users can set a daily sugar limit based on their health goals. The app provides a simple interface for users to input their desired sugar limit, and it will automatically calculate the remaining sugar allowance based on the beverages consumed throughout the day.
+
+### 4. Statistics and Graphs
+
+The statistics feature provides visualization of sugar consumption data in the form of bar graphs, either daily, weekly, or monthly. In addition to the graph, summary information is also provided, including minimum (MIN), maximum (MAX), and average (AVG) consumption amounts in grams. This feature allows users to monitor their overall consumption patterns and evaluate their own habits.
+
+### 5. Install to Device (PWA)
+
+This app was developed using Progressive Web App (PWA) technology, allowing users to install it directly onto their devices like a native app. This feature allows users to quickly access the app from their device's home screen without having to open a browser each time.
+
+## CI/CD Environment
+
+![Sweet Check Architecture](https://res.cloudinary.com/asyari/image/upload/v1752307685/Arsitektur_Cloud_dvpbtt.png)
+
+The CI/CD environment for the Sweet Check app is hosted on Google Cloud Platform (GCP). The architecture includes:
+- **Google Cloud Run**: Used to run the Next.js application in a serverless environment, allowing for automatic scaling based on demand.
+- **Google Cloud Storage**: Used for storing static assets such as images and other media files
+- **Google Artifact Registry**: Used to store Docker images for the application.
+- **Google Cloud Build**: Used for building and deploying the application automatically whenever changes are pushed to the repository.
+- **Neon**: A serverless PostgreSQL database used for storing application data, such as user profiles, scanned beverage data, and sugar consumption history.
+
