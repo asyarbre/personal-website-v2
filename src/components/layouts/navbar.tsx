@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { Dock, DockIcon } from '@/components/magicui/dock';
-import { ModeToggle } from '@/components/mode-toggle';
+import { ThemeToggleButton } from '@/components/theme-toggle-button';
 import { buttonVariants } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import {
@@ -64,7 +64,7 @@ export default function Navbar() {
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>
-              <ModeToggle />
+              <ThemeToggleButton variant="circle-blur" start="top-left" />
             </TooltipTrigger>
             <TooltipContent>
               <p>Theme</p>
