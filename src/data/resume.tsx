@@ -194,6 +194,32 @@ export const DATA = {
     },
     {
       isFeatured: true,
+      title: 'Kirim Now REST API',
+      href: 'projects/kirim-now-api',
+      description:
+        'Kirim Now REST API is a backend system designed for courier and logistics operations. This project was developed to further explore the use of the NestJS framework and modern backend architecture patterns, and showcases enterprise-grade features and integrations.',
+      technologies: [
+        'Nest.js',
+        'PostgreSQL',
+        'Prisma ORM',
+        'Redis',
+        'Xendit',
+        'Turf.js',
+        'OpenCage',
+        'Google Cloud',
+      ],
+      links: [
+        {
+          type: 'Source',
+          href: 'https://github.com/asyarbre/kirim-now-be',
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        'https://res.cloudinary.com/asyari/image/upload/v1756994866/kirim-now_bmyamh.jpg',
+    },
+    {
+      isFeatured: true,
       title: 'Jajan Jalan REST API',
       href: 'projects/jajanjalan-api',
       description:
