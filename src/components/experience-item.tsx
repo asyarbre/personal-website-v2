@@ -1,8 +1,9 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
+
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 type ExperienceItemProps = {
   company: string;
@@ -36,13 +37,14 @@ export default function ExperienceItem({
               target="_blank"
               className="inline-flex items-center gap-1.5 relative group"
             >
-              <Image
-                src={logoUrl}
-                alt={company}
-                width={100}
-                height={100}
-                className="w-5 h-5 rounded-sm"
-              />
+              <Avatar className="border size-6 m-auto bg-muted-background dark:bg-foreground">
+                <AvatarImage
+                  src={logoUrl}
+                  alt={company}
+                  className="object-contain bg-background"
+                />
+                <AvatarFallback>{company[0]}</AvatarFallback>
+              </Avatar>
               <p className="text-sm text-accent-foreground/80 font-medium relative">
                 {company}
                 <span className="absolute -bottom-0.5 left-0 w-full h-px bg-current origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100" />
