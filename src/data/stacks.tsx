@@ -1,4 +1,5 @@
 import { JSX } from 'react';
+import { FaJava } from 'react-icons/fa6';
 import {
   SiCss3,
   SiDocker,
@@ -22,6 +23,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVite,
+  SiVuedotjs,
 } from 'react-icons/si';
 
 export type stacksProps = {
@@ -36,10 +38,12 @@ export const STACKS: stacksProps = {
   TypeScript: <SiTypescript size={iconSize} color="#60A5FA" />, // blue-400
   Go: <SiGo size={iconSize} color="#60A5FA" />, // blue-400
   PHP: <SiPhp size={iconSize} color="#60A5FA" />, // blue-400
+  Java: <FaJava size={iconSize} color="#60A5FA" />, // blue-400
 
   // Frontend Frameworks
   'Next.js': <SiNextdotjs size={iconSize} />,
   'React.js': <SiReact size={iconSize} color="#0EA5E9" />, // sky-500
+  'Vue.js': <SiVuedotjs size={iconSize} color="#4FC08D" />, // green-500
   'Vite.js': <SiVite size={iconSize} color="#3B82F6" />, // blue-500
 
   // Frontend Library

@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "An online portfolio by Asya'ri. Showcase of my projects, skills, and some information about me.",
   summary:
-    'Passionate and skilled Full Stack Engineer with a strong foundation in a diverse set of technologies. Proficient in front-end development using ReactJS, NextJs. Back-end expertise includes ExpressJs, Laravel, Codeigniter, and database management with MySQL, PostgreSQL and MongoDB. Well-versed in responsive design frameworks such as Bootstrap and TailwindCSS. Additionally, possess Linux server administration skills and Google Cloud Platform.',
+    'I am passionate about building efficient and scalable applications, with a strong foundation in diverse technologies. I specialize in front-end development using React.js, Next.js, Vue.js, while also having solid back-end expertise with Nest.js, Express.js, Laravel, and CodeIgniter. Database management with MySQL and MongoDB, as well as responsive design using Bootstrap and TailwindCSS. Additionally, I have hands-on skills in Linux server administration and Google Cloud Platform.',
   avatarUrl: '/me.jpg',
   navbar: [
     { href: '/', icon: HomeIcon, label: 'Home' },
