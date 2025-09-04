@@ -60,7 +60,7 @@ export default async function Blog({
 
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-4 max-w-2xl mx-auto py-12 sm:py-24 px-6">
-      <section id="blog">
+      <section id="project">
         <script
           type="application/ld+json"
           suppressHydrationWarning
@@ -73,7 +73,7 @@ export default async function Blog({
               image: project.metadata.image
                 ? `${DATA.url}${project.metadata.image}`
                 : `${DATA.url}/og?title=${project.metadata.title}`,
-              url: `${DATA.url}/blog/${project.slug}`,
+              url: `${DATA.url}/projects/${project.slug}`,
               author: {
                 '@type': 'Person',
                 name: DATA.name,
