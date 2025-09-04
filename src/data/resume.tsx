@@ -50,6 +50,24 @@ export const DATA = {
       },
     },
   },
+  education: [
+    {
+      school: 'Politeknik Negeri Media Kreatif',
+      href: 'https://polimedia.ac.id',
+      degree: "Bachelor's Degree of Multimedia Engineering",
+      logoUrl: '/polimedia-logo.png',
+      start: '2021',
+      end: '2025',
+    },
+    {
+      school: 'SMK Negeri 22 Jakarta',
+      href: 'https://smkn22jakarta.sch.id',
+      degree: 'Vocational School of Computer and Network Engineering',
+      logoUrl: '/smkn-22-logo.png',
+      start: '2018',
+      end: '2021',
+    },
+  ],
   work: [
     {
       company: 'Nusantara Infrastructure',
