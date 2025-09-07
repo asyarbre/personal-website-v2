@@ -1,6 +1,4 @@
-'use client';
-
-import { JSX, useEffect, useState } from 'react';
+import { JSX } from 'react';
 
 import { Marquee } from '@/components/magicui/marquee';
 import { STACKS } from '@/data/stacks';
@@ -13,12 +11,7 @@ const Tag = ({ icon, title }: { icon: JSX.Element; title: string }) => (
 );
 
 export function Skill() {
-  const [skills, setSkills] = useState<Array<[string, JSX.Element]>>([]);
-
-  useEffect(() => {
-    const skillsArray = Object.entries(STACKS);
-    setSkills(skillsArray);
-  }, []);
+  const skills = Object.entries(STACKS);
 
   const firstRow = skills.slice(0, Math.ceil(skills.length / 3));
   const secondRow = skills.slice(
