@@ -1,14 +1,6 @@
-import AboutSection from '@/components/about-section';
-import EducationSection from '@/components/education-section';
-import ExperiencesSection from '@/components/experiences-section';
-import HeroSection from '@/components/hero-section';
-import ProjectsSection from '@/components/projects-section';
-import SkillsSection from '@/components/skills-section';
 import { DATA } from '@/data/resume';
 
 import type { Metadata } from 'next';
-
-const BLUR_FADE_DELAY = 0.04;
 
 export const metadata: Metadata = {
   title: DATA.name,
@@ -40,12 +32,26 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-2xl mx-auto py-12 sm:py-24 px-6">
-      <HeroSection blurFadeDelay={BLUR_FADE_DELAY} />
-      <AboutSection blurFadeDelay={BLUR_FADE_DELAY} />
-      <SkillsSection blurFadeDelay={BLUR_FADE_DELAY} />
-      <ProjectsSection blurFadeDelay={BLUR_FADE_DELAY} />
-      <EducationSection blurFadeDelay={BLUR_FADE_DELAY} />
-      <ExperiencesSection blurFadeDelay={BLUR_FADE_DELAY} />
+      <section id="hero">
+        <div className="mx-auto w-full max-w-2xl space-y-8">
+          <div className="gap-2 flex justify-between">
+            <div className="flex-col flex flex-1 space-y-1.5">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
+                I&apos;m {DATA.name.split(' ')[0]}
+              </h1>
+              <p className="max-w-[600px] md:text-xl">
+                A student who aspires to be a software engineer interested in
+                full-stack development
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2 className="text-xl font-bold">About</h2>
+        <p className="text-muted-foreground">{DATA.summary}</p>
+      </section>
     </main>
   );
 }
