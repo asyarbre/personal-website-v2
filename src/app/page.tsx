@@ -17,12 +17,16 @@ export const metadata: Metadata = {
     title: `${DATA.name} - Full Stack Developer`,
     description: DATA.description,
     url: DATA.url,
+    siteName: DATA.name,
+    locale: 'id_ID',
+    type: 'website',
     images: [
       {
         url: '/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: `${DATA.name} - Full Stack Developer`,
+        type: 'image/png',
       },
     ],
   },

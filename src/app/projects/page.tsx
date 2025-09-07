@@ -18,12 +18,16 @@ export const metadata: Metadata = {
     description:
       'Explore my portfolio of web development projects including React, Next.js, and full-stack applications.',
     url: `${DATA.url}/projects`,
+    siteName: DATA.name,
+    locale: 'id_ID',
+    type: 'website',
     images: [
       {
         url: '/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: `Projects | ${DATA.name}`,
+        type: 'image/png',
       },
     ],
   },
