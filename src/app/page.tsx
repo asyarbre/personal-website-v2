@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     title: `${DATA.name} - Full Stack Developer`,
     description: DATA.description,
-    images: [`/open-graph.png`],
+    images: [`/opengraph-image.png`],
   },
 };
 

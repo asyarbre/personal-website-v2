@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: `Projects | ${DATA.name}`,
     description:
       'Explore my portfolio of web development projects including React, Next.js, and full-stack applications.',
-    images: [`/open-graph.png`],
+    images: [`/opengraph-image.png`],
   },
 };
 

@@ -33,13 +33,23 @@ export async function generateMetadata({
       title,
       description,
       type: 'article',
-      url: `${DATA.url}/blog/${project.slug}`,
-      images: '/opengraph-image.png',
+      url: `${DATA.url}/projects/${project.slug}`,
+      siteName: DATA.name,
+      locale: 'id_ID',
+      images: [
+        {
+          url: '/opengraph-image.png',
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
+      images: [`/opengraph-image.png`],
     },
   };
 }

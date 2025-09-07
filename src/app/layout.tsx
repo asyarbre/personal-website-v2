@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: DATA.name,
+    title: `${DATA.name} - Full Stack Developer`,
     description: DATA.description,
     url: DATA.url,
     siteName: DATA.name,
@@ -56,6 +56,13 @@ export const metadata: Metadata = {
         alt: `${DATA.name} - Full Stack Developer`,
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${DATA.name} - Full Stack Developer`,
+    description: DATA.description,
+    creator: '@asyarbre',
+    images: [`/opengraph-image.png`],
   },
   robots: {
     index: true,
