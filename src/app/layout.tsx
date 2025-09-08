@@ -6,6 +6,7 @@ import './globals.css';
 
 import FooterSection from '@/components/layouts/footer';
 import Navbar from '@/components/layouts/navbar';
+import NowPlaying from '@/components/now-playing';
 import { ThemeProvider } from '@/components/theme-provider';
 import { DATA } from '@/data/resume';
 
@@ -95,6 +96,7 @@ export default function RootLayout({
         className={`${geistSans.variable} min-h-screen bg-background font-sans antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <NowPlaying />
           {children}
           <Navbar />
           <FooterSection />
