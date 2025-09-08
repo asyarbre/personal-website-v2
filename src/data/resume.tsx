@@ -125,7 +125,7 @@ export const DATA = {
       location: 'Jakarta, Indonesia',
       title: 'Front End Developer',
       logoUrl: '/karejo-logo.svg',
-      start: 'Sep 2022',
+      start: 'Jun 2022',
       end: 'Aug 2023',
       responsibilities: [
         'Karejo is a business funded by the Polimedia through Program Mahasiswa Wirausaha (PMW).',
@@ -237,6 +237,23 @@ export const DATA = {
     },
     {
       isFeatured: true,
+      title: 'NITA Merchant',
+      href: 'projects/nita-merchant',
+      description:
+        'Dashboard for NITA Merchant. This dashboard is used to manage the data of the NITA Merchant.',
+      technologies: ['Laravel', 'PHP', 'MySQL', 'JavaScript', 'TailwindCSS'],
+      links: [
+        {
+          type: 'Website',
+          href: 'https://tolmakassar.com/nita/merchant',
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image:
+        'https://res.cloudinary.com/asyari/image/upload/v1725605271/nita-merchant-cover_sgbuzb.png',
+    },
+    {
+      isFeatured: false,
       title: 'Next.js TypeScript Starter',
       href: 'projects/next-ts-starter',
       description:
@@ -259,23 +276,6 @@ export const DATA = {
       ],
       image:
         'https://res.cloudinary.com/asyari/image/upload/v1725242403/next-starter_qxfjmt.jpg',
-    },
-    {
-      isFeatured: true,
-      title: 'NITA Merchant',
-      href: 'projects/nita-merchant',
-      description:
-        'Dashboard for NITA Merchant. This dashboard is used to manage the data of the NITA Merchant.',
-      technologies: ['Laravel', 'PHP', 'MySQL', 'JavaScript', 'TailwindCSS'],
-      links: [
-        {
-          type: 'Website',
-          href: 'https://tolmakassar.com/nita/merchant',
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image:
-        'https://res.cloudinary.com/asyari/image/upload/v1725605271/nita-merchant-cover_sgbuzb.png',
     },
     {
       isFeatured: false,
